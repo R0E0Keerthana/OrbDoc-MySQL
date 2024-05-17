@@ -1,0 +1,28 @@
+{% extends "basic.html" %}
+{% block title %}Assessment{% endblock %}
+
+{% block content %}
+<center>
+<form method = "POST" action = "{{ url_for('assessment') }}">
+<div>
+<label>Email:</label>
+<input class = "form-input" type = "email" name = "email" placeholder = "Enter your Email" required>
+</div>
+<br>
+<div>
+<label>Do You Like Our Product?</label>
+<select class="form-input" name="like" >
+<option value="yes">YES!</option>
+<option value="no">No</option>
+</select>
+</div>
+<br>
+<div>
+<label>Enter Your Favourite Number:</label>
+<input class="form-input" type="number" name="fav" required>
+</div>
+<br>
+<input class="form-button" type = "submit" value="Submit">
+</center>
+</form>
+{% endblock %}

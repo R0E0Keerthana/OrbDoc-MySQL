@@ -1,0 +1,5 @@
+{% extends "basic.html" %}
+{% block title %}Result {% endblock %}
+
+{% block content %}
+<h1>{{alert_msg}}</h1>
